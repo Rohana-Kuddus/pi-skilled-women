@@ -338,27 +338,38 @@ section.fiturInfo .copy {
     }
     .text-hero-bold h1{
         margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
     .text-hero-regular p {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         font-size: 1rem;
     }
 
     section.hero .btn-primary-white {
         padding: 0.5rem 1.25rem;  
         font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
     section.hero .btn-primary-white .ri-arrow-right-line {
         font-size: 1.5rem;
     }
     section.hero img{
         margin-top: 3rem;
-       height: 80%;
+        height: 80%;
     }
 
-    /*------- fitur -------*/
-    
 
+    /*------- fitur info-------*/
+    section.fiturInfo .copy{
+            display: flex;
+            margin-bottom: 1rem;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    }
+
+    section.fiturInfo .copy-title h1{
+        font-size: 2.25rem;
+    }
 }
 
