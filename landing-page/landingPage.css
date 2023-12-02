@@ -294,7 +294,54 @@ body {
     color: var(--menu-hover-color);
 }
 
+/*=============== HERO SECTION ===============*/
+section.hero {
+    background-color: var(--primary-color);
+    padding: 5rem 0;
+    top: 3rem;
+    position: relative;
+}
+
+.text-hero-bold {
+    margin: 1.25rem 0;
+}
+section.hero .text-hero-regular {
+    padding-bottom: 1.75rem;
+}
+
+section.hero .btn-primary-white{
+    padding: 0.75rem 1.25rem;  
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For mobile devices */
+@media (max-width: 576px) {
+
+    /*------- hero -------*/
+    section.hero {
+        text-align: center;
+    }
+    .text-hero-bold h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .text-hero-regular p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    section.hero .btn-primary-white {
+        padding: 0.5rem 1.25rem;  
+        font-size: 1.25rem;
+    }
+    section.hero .btn-primary-white .ri-arrow-right-line {
+        font-size: 1.5rem;
+    }
+    section.hero img{
+        margin-top: 3rem;
+       height: 80%;
+    }
+
+}
 
