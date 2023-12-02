@@ -62,6 +62,7 @@ body {
 
 /*=============== REUSRABLE CLASS ===============*/
 .container {
+    padding-top: 3rem;
     max-width: 1440px;
 }
 
@@ -297,8 +298,7 @@ body {
 /*=============== HERO SECTION ===============*/
 section.hero {
     background-color: var(--primary-color);
-    padding: 5rem 0;
-    top: 3rem;
+    padding: 8rem 0;
     position: relative;
 }
 
@@ -311,6 +311,20 @@ section.hero .text-hero-regular {
 
 section.hero .btn-primary-white{
     padding: 0.75rem 1.25rem;  
+}
+
+/*=============== FITUR INFO SECTION ===============*/
+section.fiturInfo {
+    padding: 2rem 0;
+}
+
+section.fiturInfo .copy {
+    padding:  0 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.fiturContent .text-fitur-bold h3 {
+    font-weight: var(--font-bold);
 }
 
 
@@ -342,6 +356,9 @@ section.hero .btn-primary-white{
         margin-top: 3rem;
        height: 80%;
     }
+
+    /*------- fitur -------*/
+    
 
 }
 
