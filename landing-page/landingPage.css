@@ -12,6 +12,7 @@
     --dark-green-color: #1E292B;
 
     --primary-hover-color: #435c5a;
+    --menu-hover-color: #DA9388;
     
 
     /*========== Font and typography ==========*/
@@ -253,6 +254,46 @@ body {
 .btn-secondary:hover{
     box-shadow: 1px 1px 6px var(--dark-green-color);
 }
+
+/*=============== NAVBAR ===============*/
+.navbar {
+    padding: 48px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    font-family: var(--font-paragraph);
+    font-size: var(--logo-font-size);
+    letter-spacing: -1px;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+ 
+.logo img {
+  height: 2.5rem;
+}
+
+.nav-item .nav-link {
+    margin-right: 1.75rem;
+    font-size: var(--h4-font-size);
+    color: var(--primary-color);
+    font-family: var(--font-paragraph);
+    font-weight: var(--font-regular);
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-link.Active {
+    color: var(--menu-hover-color);
+}
+.nav-item .nav-link:hover {
+    color: var(--menu-hover-color);
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For mobile devices */
