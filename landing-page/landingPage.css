@@ -260,8 +260,8 @@ body {
 
 
 /*=============== NAVBAR ===============*/
-.navbar {
-    padding: 48px 0;
+.navbar .container-fluid{
+    padding: 12px 0;
 }
 
 .logo {
@@ -282,7 +282,7 @@ body {
 
 .nav-item .nav-link {
     margin-right: 1.75rem;
-    font-size: var(--small-font-size);
+    font-size: var(--h4-font-size);
     color: var(--primary-color);
     font-family: var(--font-paragraph);
     font-weight: var(--font-semi-bold);
@@ -296,6 +296,11 @@ body {
 }
 .nav-item .nav-link:hover {
     color: var(--menu-hover-color);
+}
+
+.navbar button.btn-primary-green {
+    font-size: var(--h4-font-size);
+    padding: 12px 28px;
 }
 
 
