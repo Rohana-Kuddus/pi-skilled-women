@@ -370,8 +370,15 @@ footer .col-lg-3 h3 , .col-lg-2 h3 {
     font-weight: bold;
 }
 
+footer .col-lg-3 h3, .col-lg-2 h3{
+    font-size: var(--h4-font-size);
+}
+footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p{
+    font-size: var(--small-font-size);
+}
+
 .ri-twitter-fill, .ri-discord-fill {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--primary-color);
 }
 
@@ -414,7 +421,7 @@ footer .col-lg-3 h3 , .col-lg-2 h3 {
 
 
     /*------- fitur info-------*/
-    section.fiturInfo .copy{
+    section.fiturInfo .copy {
         display: flex;
         margin-bottom: 1rem;
         flex-direction: column;
@@ -422,23 +429,61 @@ footer .col-lg-3 h3 , .col-lg-2 h3 {
         text-align: center;
     }
 
-    section.fiturInfo .copy-title h1{
+    section.fiturInfo .copy-title h1 {
         font-size: 2.25rem;
+    }
+    section.fiturInfo .copy p {
+        font-size: var(--small-font-size);
+        padding: 0 1rem;
+    }
+
+    /*------- benefit info-------*/
+    section.benefit {
+        padding-bottom: 3rem;
+    }
+
+    section.benefit .copy-title h1 {
+        font-size: 2.25rem;
+        padding: 0 1rem ;
+    }
+
+    section.benefit .benefitImg img {
+        height: 18rem;
+        margin: 1.5rem;
+    }
+
+    section.benefit div.copy-content {
+        margin-top: 1.25rem;
+        gap: 4rem;
+    }
+
+    section.benefit .copy h1 {
+        text-align: center;
+        font-size: var(--h3-font-size);
+        padding: 0 5rem ;
+    }
+    section.benefit .copy p {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: var(--small-font-size);
+        padding: 0 1rem ;
     }
 
 
     /*------- footer-------*/
-    footer .col-lg-3, .col-lg-2, .col-lg-7{
+    footer .col-lg-3, .col-lg-2, .col-lg-7 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 1rem;
         text-align: center;
     }
-    footer .col-lg-3 h3, .col-lg-2 h3{
+
+    footer .col-lg-3 h3, .col-lg-2 h3 {
         font-size: 1.25rem;
+
     }
-    footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p{
+    footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p {
         font-size: 1rem;
     }
 
