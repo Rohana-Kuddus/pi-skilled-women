@@ -1,5 +1,7 @@
 /*=============== IMPORT FONT ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
 /*=============== VARIABLES CSS ===============*/
 
 :root {
@@ -35,6 +37,7 @@
     --font-bold: 700;
 }
 
+
 /*=============== BASE ===============*/
 * {
     text-decoration: none;
@@ -67,6 +70,7 @@ body {
 .section {
     max-width: 1252px;
 }
+
 
 /*========== style h1, h2, h3, h4, text-normal, text-small, text-smaller ==========*/
 .heading1-green {
@@ -179,6 +183,7 @@ body {
     font-weight: var(--font-regular);
 }
 
+
 /*=============== BUTTON ===============*/
 
 /* button primary, without arrow */
@@ -232,7 +237,6 @@ body {
     color: var(--primary-color);
 }
 
-
 /* button secondary */
 .btn-secondary{
     font-family: var(--font-paragraph);
@@ -253,6 +257,7 @@ body {
 .btn-secondary:hover{
     box-shadow: 1px 1px 6px var(--dark-green-color);
 }
+
 
 /*=============== NAVBAR ===============*/
 .navbar {
@@ -293,6 +298,7 @@ body {
     color: var(--menu-hover-color);
 }
 
+
 /*=============== HERO SECTION ===============*/
 section.hero {
     background-color: var(--primary-color);
@@ -310,6 +316,7 @@ section.hero .btn-primary-white{
     margin-top: 2.75rem;
 }
 
+
 /*=============== FITUR INFO SECTION ===============*/
 section.fiturInfo {
     padding-top: 2rem;
@@ -324,6 +331,7 @@ section.fiturInfo .copy {
 .fiturContent .text-fitur-bold h3 {
     font-weight: var(--font-bold);
 }
+
 
 /*=============== BENEFIT SECTION ===============*/
 section.benefit {
@@ -352,6 +360,20 @@ section.benefit .benefitImg img {
     height: 24rem;
 }
 
+
+/*=============== FOOTER ===============*/
+footer {
+    margin:  2rem 0;
+}
+
+footer .col-lg-3 h3 , .col-lg-2 h3 {
+    font-weight: bold;
+}
+
+.ri-twitter-fill, .ri-discord-fill {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
 
  
 /*=============== BREAKPOINTS ===============*/
@@ -403,5 +425,22 @@ section.benefit .benefitImg img {
     section.fiturInfo .copy-title h1{
         font-size: 2.25rem;
     }
+
+
+    /*------- footer-------*/
+    footer .col-lg-3, .col-lg-2, .col-lg-7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    footer .col-lg-3 h3, .col-lg-2 h3{
+        font-size: 1.25rem;
+    }
+    footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p{
+        font-size: 1rem;
+    }
+
 }
 
