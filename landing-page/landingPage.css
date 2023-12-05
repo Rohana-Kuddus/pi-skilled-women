@@ -372,12 +372,6 @@ section.benefit .benefitImg img {
 
 
 /*=============== ROADMAP SECTION ===============*/
-section.roadmap {
-    margin-bottom: 3rem;
-}
-section.roadmap .container-fluid {
-    padding-left: 4rem;
-}
 
 section.roadmap .copy-title {
     margin-bottom: 3rem;
