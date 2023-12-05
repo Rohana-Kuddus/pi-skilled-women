@@ -55,12 +55,6 @@ body {
     color: var(--primary-color);
 }
 
-.navbar {
-    background-color: var(--white-color);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-
 /*=============== REUSRABLE CLASS ===============*/
 .container {
     padding-top: 3rem;
@@ -109,6 +103,12 @@ body {
     font-family: var(--font-header);
     font-size: var(--h3-font-size);
     color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.heading3-dark {
+    font-family: var(--font-header);
+    font-size: var(--h3-font-size);
+    color: var(--dark-green-color);
     font-weight: var(--font-regular);
 }
 
@@ -260,6 +260,11 @@ body {
 
 
 /*=============== NAVBAR ===============*/
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
 .navbar .container-fluid{
     padding: 12px 0;
 }
@@ -292,7 +297,7 @@ body {
 }
 
 .navbar-nav .nav-link.Active {
-    color: var(--menu-hover-color);
+    color: var(--menu-hover-color); 
 }
 .nav-item .nav-link:hover {
     color: var(--menu-hover-color);
@@ -366,26 +371,129 @@ section.benefit .benefitImg img {
 }
 
 
+/*=============== ROADMAP SECTION ===============*/
+section.roadmap {
+    margin-bottom: 3rem;
+}
+section.roadmap .container-fluid {
+    padding-left: 4rem;
+}
+
+section.roadmap .copy-title {
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+section.roadmap .copy h1 {
+    margin: 1rem 0;
+}
+section.roadmap .copy p {
+    margin-bottom: 3rem;
+}
+section.roadmap .copy button {
+    padding: 12px 28px;
+}
+
+/* jobs carousel */
+
+.card-wrapper .card-tag p.btn-secondary {
+    padding: 0 0.75rem ;                                 
+}
+
+.card-wrapper .card-body .heading3-dark {
+    font-weight: var(--font-bold);
+    padding-bottom: .25rem;
+}
+.card-wrapper .card-body button {
+    padding: 0.5rem 2rem ;
+    margin: 2rem;
+}
+.card-wrapper .card-body a{
+    text-decoration: none;
+}
+
+
+/* style card */
+.carousel-inner {
+    padding: 1em;
+}
+.carousel .card {
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 1.5rem;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(56%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-56%);
+    }
+
+    .carousel .carousel-control-prev {
+        position: absolute;
+        left: 18rem;
+        transform: translateY(56%);
+    }
+    .carousel .carousel-control-next {
+        position: absolute;
+        left: 21.5rem;
+        transform: translateY(56%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+
 /*=============== FOOTER ===============*/
 footer {
-    margin:  2rem 0;
+    margin-top: 7rem;
+    padding-bottom: 3rem;
 }
 
 footer .col-lg-3 h3 , .col-lg-2 h3 {
     font-weight: bold;
 }
 
-footer .col-lg-3 h3, .col-lg-2 h3{
+footer .col-lg-3 h3, .col-lg-2 h3 {
     font-size: var(--h4-font-size);
 }
-footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p{
+footer .col-lg-2 a{
+    text-decoration: none;
+}
+
+footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p {
     font-size: var(--small-font-size);
 }
 
+footer .col-lg-3 p.email {
+    text-decoration: underline;
+     text-decoration-color: var(--primary-color);
+}
 .ri-twitter-fill, .ri-discord-fill {
     font-size: 1.75rem;
     color: var(--primary-color);
 }
+
 
  
 /*=============== BREAKPOINTS ===============*/
@@ -473,6 +581,37 @@ footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p{
         font-size: var(--small-font-size);
         padding: 0 1rem ;
     }
+
+    /*------- roadmap-------*/
+
+    section.roadmap .copy-title h1 {
+        font-size: 2.25rem;
+        padding: 0 1rem ;
+    }
+
+    section.roadmap .copy h1 {
+        text-align: center;
+        font-size: var(--h3-font-size);
+    }
+    section.roadmap .copy p {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: var(--small-font-size);
+        padding: 0 1rem ;
+    }
+
+    section.roadmap .btn-job {
+        display: flex;
+        justify-content: center;
+    }
+
+        /*------- carousel-------*/
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
 
 
     /*------- footer-------*/
