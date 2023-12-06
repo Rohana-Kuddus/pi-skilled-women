@@ -32,6 +32,14 @@ const getkelasDesain = async (id) => {
   return data;
 };
 
+const getkelasHidroponik = async (id) => {
+  const api =`https://65702b3609586eff6640d32c.mockapi.io/kelas-hidroponik/${id}`;
+
+  const raw = await fetch(api);
+  const data = await raw.json();
+  return data;
+};
+
 const showData = async () => {
   // get data by id
   // const params = new URLSearchParams(window.location.search);
@@ -41,7 +49,7 @@ const showData = async () => {
   const detail = await getDetail(id);
   const desain = await getkelasDesain(id);
 
-  console.log(detail.desain.hidroponik);
+  console.log(desain);
   // const title = document.getElementById('job-title');
   // title.innerHTML = job.title;
 
