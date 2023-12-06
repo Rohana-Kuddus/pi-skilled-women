@@ -308,6 +308,50 @@ body {
     padding: 12px 28px;
 }
 
+/* flex container */
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.flex-item {
+    padding: 1em 0;
+}
+
+.item-left {
+    margin-right: 4em;
+    max-width: 40vw;
+}
+
+.col {
+    flex-direction: column;
+}
+
+/* hero section */
+.hero-img {
+    max-width: 40vw;
+    border-radius: 16px;
+}
+
+/* tab section */
+.nav {
+    justify-content: center;
+    margin: 2rem;
+}
+
+.nav-link {
+    padding: 20px;
+}
+
+.tab-detail-intro .active {
+    color: var(--primary-color) !important;
+    font-weight: 400 !important;
+    background-color: var(--secondary-color);
+    border-radius: 12px 12px 0 0;
+}
+
+
 /* Roadmap */
 .h1-roadmap {
     /* margin: 0; */
