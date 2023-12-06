@@ -27,7 +27,7 @@ fetch('https://65687b5f9927836bd974e7bb.mockapi.io/api/v1/jobs/?')
               <div class="card-content"> 
                   <h5 class="heading3-dark">${job.title}</h5>
                   <p class="paragraph-dark">${job.description}</p>
-                  <a href="../job-detail-intro/jobdetailintro.html?id=${job.id}" class="card-btn d-flex justify-content-center">
+                  <a href="./job-detail-intro/jobdetailintro.html?id=${job.id}" class="card-btn d-flex justify-content-center">
                     <button class="btn-primary-green">Lihat Detail</button>
                   </a>
               </div>

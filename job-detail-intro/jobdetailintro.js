@@ -31,6 +31,14 @@ const showData = async () => {
     hero.src = job.image;
     hero.alt = getTag(job.image);
 
+    // tab section
+    const tab = document.getElementById('tab-roadmap');
+    if (id == '1') {
+        tab.href = '../Desain-Grafis/roadmapdesaingrafis.html';
+    } else if (id == '2') {
+        tab.href = '../Hidroponik/roadmaphidroponik.html';
+    }
+
     // intro section
     const introHeader = document.getElementById('intro-heading');
     const introContent = document.getElementById('intro-content');
