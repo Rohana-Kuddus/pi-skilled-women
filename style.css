@@ -1,0 +1,265 @@
+/*=============== IMPORT FONT ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --primary-color: #4F6C6A;
+    --secondary-color: #EDEDED;
+    --accent-color: #F6DDD9;
+    --white-color: white;
+    --dark-green-color: #1E292B;
+
+    --primary-hover-color: #334443;
+    
+
+    /*========== Font and typography ==========*/
+    --font-header : 'Exo', sans-serif;
+    --font-paragraph : 'Titillium Web', sans-serif;   
+
+    /*========== Font size ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --logo-font-size: 2rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.2rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+/*=============== BASE ===============*/
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:var(--font-paragraph);
+    background-color: var(--white-color);
+    font-size: var(--normal-font-size);
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+}
+
+
+/*=============== REUSRABLE CLASS ===============*/
+.container {
+    max-width: 1440px;
+}
+
+.section {
+    max-width: 1252px;
+}
+
+/*========== style h1, h2, h3, h4, text-normal, text-small, text-smaller ==========*/
+.heading1-green {
+    font-family: var(--font-header);
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+.heading1-white {
+    font-family: var(--font-header);
+    font-size: var(--h1-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+
+.heading2-green {
+    font-family: var(--font-header);
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+.heading2-white {
+    font-family: var(--font-header);
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+
+.heading3-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--h3-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.heading3-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+
+.heading4-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--primary-color) !important;
+    font-weight: var(--font-regular) !important;
+}
+.heading4-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.heading4-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+.paragraph-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.paragraph-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.paragraph-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+.text-small-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.text-small-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.text-small-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+/* text paling kecil */
+.text-smaller-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.text-smaller-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.text-smaller-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+/*=============== BUTTON ===============*/
+
+/* button primary, without arrow */
+.btn-primary-green{
+    font-family: var(--font-paragraph);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 1rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary-green:hover{
+    background-color: var(--primary-hover-color);
+}
+
+/* right arrow, from remixicon.com */
+.btn-primary-green .ri-arrow-right-line{
+    color: var(--white-color);
+}
+
+.btn-primary-white{
+    font-family: var(--font-paragraph);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary-white:hover{
+    box-shadow: 1px 1px 6px var(--accent-color);
+}
+
+/* right arrow, from remixicon.com */
+.btn-primary-white .ri-arrow-right-line{
+    color: var(--primary-color);
+}
+
+
+/* button secondary */
+.btn-secondary{
+    font-family: var(--font-paragraph);
+    background-color: var(--secondary-color);
+    color: var(--dark-green-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    box-shadow: 1px 1px 6px var(--dark-green-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For mobile devices */
+

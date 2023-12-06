@@ -1,0 +1,541 @@
+/*=============== IMPORT FONT ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --primary-color: #4F6C6A;
+    --secondary-color: #EDEDED;
+    --accent-color: #F6DDD9;
+    --white-color: white;
+    --dark-green-color: #1E292B;
+
+    --primary-hover-color: #435c5a;
+    --menu-hover-color: #DA9388;
+    
+
+    /*========== Font and typography ==========*/
+    --font-header : 'Exo', sans-serif;
+    --font-paragraph : 'Titillium Web', sans-serif;   
+
+    /*========== Font size ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --logo-font-size: 2rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+
+/*=============== BASE ===============*/
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:var(--font-paragraph);
+    background-color: var(--white-color);
+    font-size: var(--normal-font-size);
+    color: var(--primary-color);
+}
+
+/*=============== REUSRABLE CLASS ===============*/
+.container {
+    padding-top: 3rem;
+    max-width: 1440px;
+}
+
+.section {
+    max-width: 1252px;
+}
+
+
+/*========== style h1, h2, h3, h4, text-normal, text-small, text-smaller ==========*/
+.heading1-green {
+    font-family: var(--font-header);
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+.heading1-white {
+    font-family: var(--font-header);
+    font-size: var(--h1-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+
+.heading2-green {
+    font-family: var(--font-header);
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+.heading2-white {
+    font-family: var(--font-header);
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+
+.heading3-green {
+    font-family: var(--font-header);
+    font-size: var(--h3-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.heading3-white {
+    font-family: var(--font-header);
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.heading3-dark {
+    font-family: var(--font-header);
+    font-size: var(--h3-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+.heading4-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.heading4-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+
+.paragraph-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.paragraph-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.paragraph-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--normal-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+.text-small-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.text-small-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.text-small-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--small-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+/* text paling kecil */
+.text-smaller-green {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-regular);
+}
+.text-smaller-white {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.text-smaller-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--smaller-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--font-regular);
+}
+
+
+/*=============== BUTTON ===============*/
+
+/* button primary, without arrow */
+.btn-primary-green{
+    font-family: var(--font-paragraph);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary-green:hover{
+    background-color: var(--primary-hover-color);
+}
+
+/* right arrow, from remixicon.com */
+.btn-primary-green .ri-arrow-right-line{
+    color: var(--white-color);
+}
+
+.btn-primary-white{
+    font-family: var(--font-paragraph);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary-white:hover{
+    box-shadow: 1px 1px 6px var(--accent-color);
+}
+
+/* right arrow, from remixicon.com */
+.btn-primary-white .ri-arrow-right-line{
+    color: var(--primary-color);
+}
+
+/* button secondary */
+.btn-secondary{
+    font-family: var(--font-paragraph);
+    background-color: var(--secondary-color);
+    color: var(--dark-green-color);
+    font-size: var(--font-paragraph);
+    font-weight: var(--font-regular);
+
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    box-shadow: 1px 1px 6px var(--dark-green-color);
+}
+
+
+/*=============== NAVBAR ===============*/
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar .container-fluid{
+    padding: 12px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    font-family: var(--font-paragraph);
+    font-size: var(--logo-font-size);
+    letter-spacing: -1px;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+ 
+.logo img {
+  height: 2.5rem;
+}
+
+.nav-item .nav-link {
+    margin-right: 1.75rem;
+    font-size: var(--h4-font-size);
+    color: var(--primary-color);
+    font-family: var(--font-paragraph);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-link.Active {
+    color: var(--menu-hover-color); 
+}
+.nav-item .nav-link:hover {
+    color: var(--menu-hover-color);
+}
+
+.navbar button.btn-primary-green {
+    font-size: var(--h4-font-size);
+    padding: 12px 28px;
+}
+ 
+/* hero */
+.hero {
+    padding-top: 6rem;
+}
+
+/* Roadmap */
+.h1-roadmap {
+    /* margin: 0; */
+    color: #fff;
+    text-align: justify;
+    justify-content: center;
+    padding: 36px 36px;
+  }
+
+  .container-penjelasan {
+    margin: 32px;
+
+    background-color: #4f6c6a;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px; 
+
+    display: flex;
+  }
+
+  .h1-roadmap {
+    padding-right: 40px;
+  }
+  
+  .container-penjelasan p {
+    font-size: 18px;
+    padding: 36px 36px;
+    text-align: justify;
+    color: white;
+  }
+
+  .btn-rekomendasi {
+    background-color: #ededed;
+    color: black;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 8px;
+    font-size: var(--small-font-size);
+    margin: 32px;
+    margin-top: 16px;
+    align-items: inherit;
+    text-align: center;
+    justify-content: right;
+  }
+  
+  .btn-rekomendasi i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+  }
+  
+  .border-roadmap {
+    border-style: dashed;
+    border-color: #4f6c6a;
+    border-radius: 24px;
+    margin: 32px;
+    margin-top: 8px;
+  }
+/* Sidebar */
+/* ======================== side bar ========================== */
+
+/* ubah ukuran sidebar xl atau xxl pilih aja */
+.offcanvas-header {
+    border-bottom: 1px solid #ededed;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.img-container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+
+/* rata tengah button vote dgn lihat kelas */
+.offcanvas-body .card .card-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* ukuran dan warna vote */
+.ri-thumb-up-fill, .ri-thumb-down-line {
+    color: var(--primary-color);
+    font-size: var(--h4-font-size)
+}
+
+.card h5 {
+    font-weight: var(--font-semi-bold);
+}
+
+.card .tag .btn-secondary{
+    padding: 0.15rem 1rem;
+}
+
+
+/*=============== FOOTER ===============*/
+footer {
+    margin-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+footer .col-lg-3 h3 , .col-lg-2 h3 {
+    font-weight: bold;
+}
+
+footer .col-lg-3 h3, .col-lg-2 h3 {
+    font-size: var(--h4-font-size);
+}
+footer .col-lg-2 a{
+    text-decoration: none;
+}
+
+footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p {
+    font-size: var(--small-font-size);
+}
+
+footer .col-lg-3 p.email {
+    text-decoration: underline;
+     text-decoration-color: var(--primary-color);
+}
+.ri-twitter-fill, .ri-discord-fill {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+/* Aturan CSS untuk tampilan mobile */
+@media only screen and (max-width: 767px) {
+    /* Navbar */
+    .navbar-brand {
+        margin-right: auto;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+
+    /* Hero section */
+    .hero-img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .heading1-green {
+        text-align: center;
+    }
+
+    /* Tab navigation */
+    .tab-detail-intro {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Fitur Penjelasan Roadmap */
+    .container-penjelasan {
+        padding: 1rem;
+    }
+
+    /* Tombol Rekomendasi Roadmap */
+    .btn-rekomendasi {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Roadmap container */
+    .container-roadmap {
+        width: 100%;
+        overflow-x: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    
+    /* Offcanvas */
+    .offcanvas-size-xl {
+        width: 90%;
+    }
+
+    /* Footer */
+    footer .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    footer .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer .col-lg-7 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .col-lg-3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .col-lg-2 {
+        text-align: center;
+    }
+}
