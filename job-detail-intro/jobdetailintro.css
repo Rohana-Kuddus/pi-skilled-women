@@ -11,8 +11,6 @@
     align-items: center;
     width: 100%;
     padding: 0 calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .flex-item {
@@ -33,6 +31,10 @@
 }
 
 /* hero section */
+.hero {
+    margin: 2rem 0;
+}
+
 .hero-img {
     max-width: 30vw;
     border-radius: 16px;
@@ -221,48 +223,42 @@
 
     /* fonts */
     .heading1-green {
-        font-size: 1.5em;
-    }
-
-    .heading2-green {
-        font-size: 1.2em;
-    }
-
-    .paragraph-dark,
-    .heading4-dark,
-    .tab-detail-intro .active,
-    .btn-primary-green {
-        font-size: 0.8em;
-    }
-
-    .heading3-green {
-        font-size: 0.8em;
+        font-size: 1.4em;
     }
 
     .desc {
-        line-height: 35px;
+        line-height: 28px;
     }
 
     /* flex container */
     .d-flex {
-        margin: 2rem;
+        padding: 0 calc(var(--bs-gutter-x) * .2);
     }
 
     .item-left {
-        margin-right: 2em;
+        margin-right: 1em;
+    }
+    
+    .item-right {
+        margin-left: 1em;
+    }
+
+    /* hero section */
+    .hero-img {
+        border-radius: 12px;
     }
 
     /* stat section */
     .stat-container {
-        gap: 0.6em;
+        gap: 0.4em;
     }
 
     .stat-square {
-        gap: 0.6em;
+        gap: 0.4em;
     }
 
     .icon-small {
-        max-width: 2.5em;
+        max-width: 2.6em;
         margin-bottom: 0.7em;
     }
 
@@ -272,40 +268,35 @@
     }
 
     .benefit-item {
-        max-width: 13rem;
-    }
-
-    .icon {
-        max-width: 4em;
+        max-width: 10rem;
     }
 
     /* video section */
     .video {
-        width: 630px;
-        height: 378px;
+        width: 525px;
+        height: 315px;
     }
 }
 
 @media screen and (max-width: 430px) {
 
-    /* font styling */
-    .heading3-green {
-        font-size: 0.8em;
-    }
-
     /* flex container */
     .d-flex {
-        margin: 4rem 2rem;
         flex-wrap: wrap;
+        margin-bottom: 2em;
     }
 
     .flex-item {
-        padding: 0;
+        padding: 0 2em;
     }
 
     .item-left {
         margin-right: 0;
         max-width: 100%;
+    }
+    
+    .item-right {
+        margin-left: 0;
     }
 
     /* hero section */
@@ -316,10 +307,13 @@
 
     .hero-img {
         max-width: 100%;
-        border-radius: 12px;
     }
 
     /* tab section */
+    .nav {
+        margin: calc(var(--bs-gutter-x) * 1.5);
+    }
+
     .nav-link {
         padding: 10px;
     }
@@ -329,18 +323,26 @@
     }
 
     /* stat section */
+    .stat-container {
+        gap: 0.8em;
+    }
+
+    .stat-square {
+        gap: 0.8em;
+    }
+
     .stat-box {
-        border-radius: 14px;
+        border-radius: 12px;
         padding: 25px 20px;
     }
     
     .icon-small {
         max-width: 2.5em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.8em;
     }
 
     .icon-letter {
-        margin-bottom: 0.2em;
+        margin-bottom: 0.4em;
     }
 
     /* benefit section */
@@ -349,25 +351,25 @@
     }
 
     .benefit-item {
-        padding: 20px 15px;
+        padding: 10px 15px;
         max-width: 100%;
         flex-basis: 100%;
         padding-top: 1.3em;
     }
 
     .icon {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.7em;
     }
 
     /* video section */
     .video {
-        width: 350px;
-        height: 210px;
+        width: 420px;
+        height: 200px;
+        margin-bottom: 2em;
     }
 
     /* button */
     .btn-primary-green {
-        font-size: 0.6em;
         padding: 1em;
     }
 }
@@ -376,8 +378,8 @@
 
     /* video section */
     .video {
-        width: 309px;
-        height: 176px;
+        width: 360px;
+        height: 168px;
     }
 
     /* button */
@@ -388,33 +390,13 @@
 
 @media screen and (max-width: 325px) {
 
-    /* fonts */
+    /* font */
     .heading1-green {
         font-size: 1.3em;
     }
 
-    .heading2-green {
-        font-size: 1em;
-    }
-
-    .paragraph-dark,
-    .heading4-dark,
-    .tab-detail-intro .active,
-    .btn-primary-green {
-        font-size: 0.6em;
-    }
-
     .heading3-green {
-        font-size: 0.7em;
-    }
-
-    .desc {
-        line-height: 28px;
-    }
-
-    /* flex container */
-    .d-flex {
-        margin: 3rem 0.8rem;
+        font-size: 0.8em;
     }
 
     /* stat section */
@@ -450,8 +432,8 @@
 
     /* video section */
     .video {
-        width: 292px;
-        height: 165px;
+        width: 320px;
+        height: 150px;
     }
 
     /* button */
