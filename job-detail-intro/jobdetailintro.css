@@ -1,60 +1,8 @@
 @import url(../style.css);
-@import url(../landing-page/landingPage.css);
 
 /* root */
 * {
     --bs-gutter-x: 1.5rem;
-}
-
-/* navbar */
-.navbar {
-    background-color: var(--white-color);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-.navbar .container-fluid{
-    padding: 8px 0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo span {
-    font-family: var(--font-paragraph);
-    font-size: var(--logo-font-size);
-    letter-spacing: -1px;
-    font-weight: var(--font-bold);
-    color: var(--primary-color);
-}
- 
-.logo img {
-  height: 2.5rem;
-}
-
-.nav-item .nav-link {
-    margin-right: 1.75rem;
-    font-size: var(--h4-font-size);
-    color: var(--primary-color);
-    font-family: var(--font-paragraph);
-    font-weight: var(--font-semi-bold);
-    text-align: center;
-    align-content: center;
-    width: 100%;
-}
-
-.navbar-nav .nav-link.Active {
-    color: var(--menu-hover-color); 
-}
-
-.nav-item .nav-link:hover {
-    color: var(--menu-hover-color);
-}
-
-.navbar button.btn-primary-green {
-    font-size: var(--h4-font-size);
-    padding: 12px 28px;
 }
 
 /* flex container */
@@ -188,37 +136,6 @@
     width: 788px;
     height: 473px;
     margin-bottom: 0.5em;
-}
-
-/* footer */
-footer {
-    margin-top: 7rem;
-}
-
-footer .col-lg-3 h3 , .col-lg-2 h3 {
-    font-weight: bold;
-}
-
-footer .col-lg-3 h3, .col-lg-2 h3 {
-    font-size: var(--h4-font-size);
-}
-
-footer .col-lg-2 a{
-    text-decoration: none;
-}
-
-footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p {
-    font-size: var(--small-font-size);
-}
-
-footer .col-lg-3 p.email {
-    text-decoration: underline;
-     text-decoration-color: var(--primary-color);
-}
-
-.ri-twitter-fill, .ri-discord-fill {
-    font-size: 1.75rem;
-    color: var(--primary-color);
 }
 
 /* responsive screens */
@@ -454,23 +371,6 @@ footer .col-lg-3 p.email {
     /* button */
     .btn-primary-green {
         padding: 1em;
-    }
-
-    /* footer */
-    footer .col-lg-3, .col-lg-2, .col-lg-7 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    footer .col-lg-3 h3, .col-lg-2 h3 {
-        font-size: 1.25rem;
-
-    }
-    footer .col-lg-3 p, .col-lg-2 p, .col-lg-7 p {
-        font-size: 1rem;
     }
 }
 
