@@ -11,7 +11,7 @@
     --white-color: white;
     --dark-green-color: #1E292B;
 
-    --primary-hover-color: #435c5a;
+    --primary-hover-color: #334443;
     
 
     /*========== Font and typography ==========*/
@@ -20,7 +20,7 @@
 
     /*========== Font size ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --logo-font-size: 2.875rem;
+    --logo-font-size: 2rem;
     --h1-font-size: 3rem;
     --h2-font-size: 2.25rem;
     --h3-font-size: 1.5rem;
@@ -96,13 +96,13 @@ body {
 }
 
 .heading3-green {
-    font-family: var(--font-header);
+    font-family: var(--font-paragraph);
     font-size: var(--h3-font-size);
     color: var(--primary-color);
     font-weight: var(--font-regular);
 }
 .heading3-white {
-    font-family: var(--font-header);
+    font-family: var(--font-paragraph);
     font-size: var(--h3-font-size);
     color: var(--white-color);
     font-weight: var(--font-regular);
@@ -111,13 +111,19 @@ body {
 .heading4-green {
     font-family: var(--font-paragraph);
     font-size: var(--h4-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
+    color: var(--primary-color) !important;
+    font-weight: var(--font-regular) !important;
 }
 .heading4-white {
     font-family: var(--font-paragraph);
     font-size: var(--h4-font-size);
     color: var(--white-color);
+    font-weight: var(--font-regular);
+}
+.heading4-dark {
+    font-family: var(--font-paragraph);
+    font-size: var(--h4-font-size);
+    color: var(--dark-green-color);
     font-weight: var(--font-regular);
 }
 
@@ -190,7 +196,7 @@ body {
     font-weight: var(--font-regular);
 
     display: inline-flex;
-    padding: 0.5rem 1.25rem;
+    padding: 1rem 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
