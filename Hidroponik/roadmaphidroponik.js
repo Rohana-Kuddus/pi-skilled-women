@@ -37,8 +37,8 @@ const showData = async () => {
   // const params = new URLSearchParams(window.location.search);
   // const id = params.get('id');
   const id = '2';
-  // const job = await getJob(id);
-  // const detail = await getDetail(id);
+  const job = await getJob(id);
+  const detail = await getDetail(id);
   const hidroponik = await getkelasHidroponik(id);
 
   console.log(hidroponik);
