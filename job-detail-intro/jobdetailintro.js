@@ -57,7 +57,7 @@ const showData = async () => {
         benefitContainer.innerHTML += `
         <div class="benefit-item">
             <img class="icon" src="${value.path}" alt="${alt}">
-            <p class="paragraph-dark">${value.description}</p>
+            <p class="paragraph paragraph-dark">${value.description}</p>
         </div>
     `;
     });

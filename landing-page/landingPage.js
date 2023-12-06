@@ -1,40 +1,49 @@
-// Fetch Pokémon data from the provided API
-fetch('https://pokeapi.deno.dev/pokemon?limit=10')
+// Fetch data from API
+fetch('https://65687b5f9927836bd974e7bb.mockapi.io/api/v1/jobs/?')
   .then(response => response.json())
   .then(data => {
-    // Access the array of Pokémon objects
-    const pokemonArray = data;
+    // Access the array of job objects
+    const jobsArray = data;
+    const jobArray =jobsArray.slice(0, 3);
+    console.log(jobArray);
 
     // Get the row container
     const rowContainer = document.getElementById('slide');
 
-    // Loop through each Pokémon in the array
-    pokemonArray.forEach(pokemon => {
-      // Create Bootstrap card for each Pokémon
-      const pokemonElement = document.createElement('div');
-      pokemonElement.className = 'carousel-item'; // Adjust the column size as needed
-      pokemonElement.innerHTML = `
-        <div class="card">
-            <img src="${pokemon.imageUrl}" class="card-img-top" alt="${pokemon.name}">
-            <div class="card-body">
-            <div class="card-tag d-flex gap-3">
-                <h6 class="paragraph-dark">Kreatif</h6>
-                <p class="text-smaller-green btn-secondary">${pokemon.types.join(', ')}</p>
-            </div class="card-content">
-            <h5 class="heading3-dark">${pokemon.name}</h5>
-            <p class="paragraph-dark">${pokemon.description}</p>
-            <a href="#" class="card-btn d-flex justify-content-center"><button class="btn-primary-green">Lihat Detail</button></a>
+    // Loop through each job in the array
+    jobArray.forEach(job => {
+      // Create Bootstrap card for each job
+      const jobElement = document.createElement('div');
+      jobElement.className = 'carousel-item';
+      jobElement.innerHTML = `
+      <div class="card">
+          <img src="${job.image}" class="card-img-top" alt="${job.title}">
+          <div class="card-body">
+              <div class="card-tag d-flex gap-3">
+                  <h6 class="paragraph-dark">${job.tagId}</h6>
+                  <p class="text-smaller-green btn-secondary">${job.tagId}</p>
+              </div>
+
+              <div class="card-content"> 
+                  <h5 class="heading3-dark">${job.title}</h5>
+                  <p class="paragraph-dark">${job.description}</p>
+                  <a href="../job-detail-intro/jobdetailintro.html?id=${job.id}" class="card-btn d-flex justify-content-center">
+                    <button class="btn-primary-green">Lihat Detail</button>
+                  </a>
+              </div>
             </div>
         </div>
             `;
         
-      // Append the Pokémon card to the row container
-      rowContainer.appendChild(pokemonElement);
+      // Append the jobs card to the row container
+      rowContainer.appendChild(jobElement);
     });
   
+    //add class active to first card
     let list = rowContainer.firstElementChild.classList;
     list.add("active");
 
+    //carousel
     let items = document.querySelectorAll('.carousel .carousel-item')
     console.log(items);
 
@@ -52,8 +61,4 @@ fetch('https://pokeapi.deno.dev/pokemon?limit=10')
     }
     })
   })
-  .catch(error => console.error('Error fetching Pokémon data:', error));
-
-
-
-
+  .catch(error => console.error('Error fetching Job data:', error));
