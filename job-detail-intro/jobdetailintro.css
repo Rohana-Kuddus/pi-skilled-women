@@ -1,0 +1,444 @@
+@import url(../style.css);
+
+/* flex container */
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 2rem;
+}
+
+.flex-item {
+    padding: 1em 0;
+}
+
+.item-left {
+    margin-right: 4em;
+    max-width: 40vw;
+}
+
+.col {
+    flex-direction: column;
+}
+
+/* hero section */
+.hero-img {
+    max-width: 40vw;
+    border-radius: 16px;
+}
+
+/* tab section */
+.nav {
+    justify-content: center;
+    margin: 2rem;
+}
+
+.nav-link {
+    padding: 20px;
+}
+
+.tab-detail-intro .active {
+    color: var(--primary-color) !important;
+    font-weight: 400 !important;
+    background-color: var(--secondary-color);
+    border-radius: 12px 12px 0 0;
+}
+
+/* intro section */
+.title {
+    margin-bottom: 1em;
+}
+
+.desc {
+    line-height: 40px;
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.stat-square {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.stat-square-item {
+    flex-basis: 100%;
+}
+
+.stat-box {
+    border: 4px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.stat {
+    background-color: var(--white-color);
+}
+
+.icon-small {
+    max-width: 4em;
+    margin-bottom: 1em;
+}
+
+.industry {
+    background-color: var(--accent-color);
+}
+
+.icon-letter {
+    margin-bottom: 0.3em;
+}
+
+/* benefit section */
+.benefit-container {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 16rem;
+    background-color: var(--accent-color);
+    border-radius: 24px;
+}
+
+.icon {
+    max-width: 6em;
+    margin-bottom: 1em;
+}
+
+/* video section */
+.video {
+    width: 1050px;
+    height: 630px;
+    margin-bottom: 2em;
+}
+
+/* responsive screens */
+@media screen and (min-width: 1440px) {
+    .nav {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* fonts */
+    .heading1-green {
+        font-size: 2em;
+    }
+
+    .heading2-green {
+        font-size: 1.5em;
+    }
+
+    .paragraph-dark,
+    .heading4-dark,
+    .tab-detail-intro .active,
+    .btn-primary-green {
+        font-size: 0.9em;
+    }
+
+    .heading3-green {
+        font-size: 1em;
+    }
+
+    /* flex container */
+    .item-left {
+        margin-right: 3em;
+    }
+
+    /* stat section */
+    .stat-container {
+        gap: 0.8em;
+    }
+
+    .stat-square {
+        gap: 0.8em;
+    }
+
+    .stat-box {
+        border: 3px solid var(--accent-color);
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .icon-small {
+        max-width: 3em;
+    }
+
+    /* benefit section */
+    .benefit-container {
+        gap: 2em;
+    }
+
+    .benefit-item {
+        max-width: 14rem;
+        border-radius: 16px;
+    }
+
+    .icon {
+        max-width: 5em;
+    }
+
+    /* video section */
+    .video {
+        width: 787.5px;
+        height: 472.5px;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* fonts */
+    .heading1-green {
+        font-size: 1.5em;
+    }
+
+    .heading2-green {
+        font-size: 1.2em;
+    }
+
+    .paragraph-dark,
+    .heading4-dark,
+    .tab-detail-intro .active,
+    .btn-primary-green {
+        font-size: 0.8em;
+    }
+
+    .heading3-green {
+        font-size: 0.8em;
+    }
+
+    .desc {
+        line-height: 35px;
+    }
+
+    /* flex container */
+    .d-flex {
+        margin: 2rem;
+    }
+
+    .item-left {
+        margin-right: 2em;
+    }
+
+    /* stat section */
+    .stat-container {
+        gap: 0.6em;
+    }
+
+    .stat-square {
+        gap: 0.6em;
+    }
+
+    .icon-small {
+        max-width: 2.5em;
+        margin-bottom: 0.7em;
+    }
+
+    /* benefit section */
+    .benefit-container {
+        gap: 1.3em;
+    }
+
+    .benefit-item {
+        max-width: 13rem;
+    }
+
+    .icon {
+        max-width: 4em;
+    }
+
+    /* video section */
+    .video {
+        width: 630px;
+        height: 378px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* font styling */
+    .heading3-green {
+        font-size: 0.8em;
+    }
+
+    /* flex container */
+    .d-flex {
+        margin: 4rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        padding: 0;
+    }
+
+    .item-left {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    /* hero section */
+    .heading {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    /* tab section */
+    .nav-link {
+        padding: 10px;
+    }
+
+    .tab-detail-intro .active {
+        border-radius: 8px 8px 0 0;
+    }
+
+    /* stat section */
+    .stat-box {
+        border-radius: 14px;
+        padding: 25px 20px;
+    }
+    
+    .icon-small {
+        max-width: 2.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .icon-letter {
+        margin-bottom: 0.2em;
+    }
+
+    /* benefit section */
+    .benefit-container {
+        gap: 0.8em;
+    }
+
+    .benefit-item {
+        padding: 20px 15px;
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-top: 1.3em;
+    }
+
+    .icon {
+        margin-bottom: 0.5em;
+    }
+
+    /* video section */
+    .video {
+        width: 350px;
+        height: 210px;
+    }
+
+    /* button */
+    .btn-primary-green {
+        font-size: 0.6em;
+        padding: 1em;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    /* video section */
+    .video {
+        width: 309px;
+        height: 176px;
+    }
+
+    /* button */
+    .btn-primary-green {
+        padding: 0.8em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+
+    /* fonts */
+    .heading1-green {
+        font-size: 1.3em;
+    }
+
+    .heading2-green {
+        font-size: 1em;
+    }
+
+    .paragraph-dark,
+    .heading4-dark,
+    .tab-detail-intro .active,
+    .btn-primary-green {
+        font-size: 0.6em;
+    }
+
+    .heading3-green {
+        font-size: 0.7em;
+    }
+
+    .desc {
+        line-height: 28px;
+    }
+
+    /* flex container */
+    .d-flex {
+        margin: 3rem 0.8rem;
+    }
+
+    /* stat section */
+    .stat-box {
+        border-radius: 12px;
+        padding: 20px 12px;
+    }
+
+    .icon-small {
+        max-width: 2.1em;
+        margin-bottom: 0.4em;
+    }
+
+    .icon-letter {
+        margin-bottom: 0.1em;
+    }
+
+    /* benefit section */
+    .benefit-container {
+        gap: 0.5em;
+    }
+
+    .benefit-item {
+        padding: 10px 15px;
+        border-radius: 12px;
+        padding-top: 1.4em;
+    }
+
+    .icon {
+        max-width: 3em;
+        margin-bottom: 0.3em;
+    }
+
+    /* video section */
+    .video {
+        width: 292px;
+        height: 165px;
+    }
+
+    /* button */
+    .btn-primary-green {
+        padding: 0.6em 0.8em;
+    }
+}
