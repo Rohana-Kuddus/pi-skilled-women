@@ -34,9 +34,9 @@ const showData = async () => {
     // tab section
     const tab = document.getElementById('tab-roadmap');
     if (id == '1') {
-        tab.href = '../Desain-Grafis/roadmapdesaingrafis.html';
+        tab.href = '../Desain-Grafis/roadmapdesain.html?id=1';
     } else if (id == '2') {
-        tab.href = '../Hidroponik/roadmaphidroponik.html';
+        tab.href = '../Hidroponik/roadmaphidroponik.html?id=2';
     }
 
     // intro section
@@ -73,7 +73,13 @@ const showData = async () => {
     // video section
     const videoHeader = document.getElementById('video-heading');
     const video = document.getElementById('video');
-    
+    const btn = document.getElementById('btn-roadmap');
+
+    if (id == '1') {
+        btn.href = '../Desain-Grafis/roadmapdesain.html?id=1';
+    } else if (id == '2') {
+        btn.href = '../Hidroponik/roadmaphidroponik.html?id=2';
+    }
     videoHeader.innerHTML = `Bagaimana Kehidupan ${job.title}?`;
     video.src = data.video;
 };
