@@ -4,7 +4,7 @@
 .d-flex {
     justify-content: center;
     align-items: center;
-    margin: 4rem 2rem;
+    margin: 4rem;
 }
 
 .flex-item {
@@ -352,7 +352,6 @@
         font-size: 0.6em;
         padding: 1em;
     }
-
 }
 
 @media screen and (max-width: 380px) {
