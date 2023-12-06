@@ -408,8 +408,6 @@ body {
     margin: 32px;
     margin-top: 8px;
   }
-
-
 /* Sidebar */
 /* ======================== side bar ========================== */
 
@@ -549,6 +547,7 @@ footer .col-lg-3 p.email {
         padding: 1rem;
     }
 
+    
     /* Offcanvas */
     .offcanvas-size-xl {
         width: 90%;
