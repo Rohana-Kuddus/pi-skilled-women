@@ -46,7 +46,7 @@
     margin: calc(var(--bs-gutter-x) * 2) calc(var(--bs-gutter-x) * 4);
 }
 
-.nav-link {
+.tab-detail-intro .nav-link {
     padding: 20px;
 }
 
@@ -314,7 +314,7 @@
         margin: calc(var(--bs-gutter-x) * 1.5);
     }
 
-    .nav-link {
+    .tab-detail-intro .nav-link {
         padding: 10px;
     }
 
