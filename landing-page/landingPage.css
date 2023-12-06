@@ -18,7 +18,7 @@
 }
 
 .navbar .container-fluid{
-    padding: 12px 0;
+    padding: 8px 0;
 }
 
 .logo {
@@ -64,8 +64,19 @@
 /*=============== HERO SECTION ===============*/
 section.hero {
     background-color: var(--primary-color);
-    padding: 8rem 0;
+    padding: 10rem 0;
     position: relative;
+}
+
+section.hero .col-lg-7 {
+    padding-top: 2rem;
+}
+
+section.hero .col-lg-7 h1 {
+    font-size: 2.25rem;
+ }
+section.hero .col-lg-7 p {
+   font-size: 1rem;
 }
 
 .text-hero-bold {
@@ -75,14 +86,13 @@ section.hero {
 section.hero .btn-primary-white{
     padding: 1rem 3rem;  
     font-size: var(--h4-font-size); 
-    margin-top: 2.75rem;
+    margin-top: 3rem;
 }
 
 
 /*=============== FITUR INFO SECTION ===============*/
 section.fiturInfo {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
 }
 
 section.fiturInfo .copy {
@@ -94,11 +104,19 @@ section.fiturInfo .copy {
     font-weight: var(--font-bold);
 }
 
+.fiturIcon img {
+    height: 3.5rem;
+}
+
+section.fiturInfo .copy-title {
+    padding-bottom: 3rem;
+}
+
 
 /*=============== BENEFIT SECTION ===============*/
 section.benefit {
     background-color: var(--primary-color);
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 6rem;
 }
 
@@ -119,11 +137,15 @@ section.benefit .text-benefit-bold h1{
 }
 
 section.benefit .benefitImg img {
-    height: 24rem;
+    height: 20rem;
 }
 
 
 /*=============== ROADMAP SECTION ===============*/
+section.roadmap {
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+}
 
 section.roadmap .copy-title {
     margin-bottom: 3rem;
@@ -258,13 +280,12 @@ footer .col-lg-3 p.email {
     /*------- hero -------*/
     section.hero {
         text-align: center;
-        padding-top: 5rem;
+        padding-top: 7rem;
         padding-bottom: 2rem;
     }
-    .text-hero-bold h1{
-        margin-bottom: 1rem;
-        font-size: 2.25rem;
-    }
+    section.hero .col-lg-7 h1 {
+        font-size: 1.5rem;
+     }
     .text-hero-regular p {
         font-size: 1rem;
     }
@@ -298,7 +319,7 @@ footer .col-lg-3 p.email {
     }
 
     section.fiturInfo .copy-title h1 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
     }
     section.fiturInfo .copy p {
         font-size: var(--small-font-size);
@@ -311,7 +332,7 @@ footer .col-lg-3 p.email {
     }
 
     section.benefit .copy-title h1 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         padding: 0 1rem ;
     }
 
@@ -340,7 +361,7 @@ footer .col-lg-3 p.email {
     /*------- roadmap-------*/
 
     section.roadmap .copy-title h1 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         padding: 0 1rem ;
     }
 
