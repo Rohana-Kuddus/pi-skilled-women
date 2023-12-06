@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../landing-page/landingPage.css">
     <link rel="stylesheet" href="jobdetailintro.css">
     <!--=============== JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -19,12 +20,51 @@
 </head>
 
 <body>
+    <!-- navbar section -->
+    <!-- <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand logo px-2" href="#">
+                <img id="icon-logo" src="/landing-page/img/brand/icon.svg" alt="logo icon">
+                <span>
+                    Skilled Women
+                </span>
+            </a>
+            <button class="navbar-toggler shadow-none mx-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-2 py-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link Active" aria-current="page" href="../landing-page/landingPage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pekerjaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center py-2 py-lg-0 pt-lg-0 px-lg-4 ">
+                    <a href="#"><button class="btn-primary-green btn-nav">Coba Sekarang</button></a>
+                </div>
+            </div>
+
+        </div>
+    </nav> -->
+
     <main>
+        <!-- hero section -->
         <div class="d-flex">
-            <h1 class="flex-item item-left heading1-green heading" id="job-title"></h1>
-            <img class="hero-img" id="hero-img" src="" alt="">
+            <h1 class="item-left heading1-green heading" id="job-title"></h1>
+            <img class="item-right hero-img" id="hero-img" src="" alt="">
         </div>
 
+        <!-- tab navigation -->
         <div class="tab-container">
             <nav class="nav nav-underline flex-sm-row tab-detail-intro">
                 <a class="flex-fill text-center nav-link active" aria-current="page" href="#">Pengenalan</a>
@@ -32,12 +72,13 @@
             </nav>
         </div>
 
+        <!-- introduction section -->
         <div class="d-flex">
             <div class="flex-item item-left">
                 <h2 class="title heading2-green" id="intro-heading"></h2>
                 <p class="desc paragraph-dark" id="intro-content"></p>
             </div>
-            <div class="flex-item stat-container">
+            <div class="flex-item stat-container item-right">
                 <div class="stat-item stat-square">
                     <div class="stat-square-item stat-box stat">
                         <h1 class="icon-letter heading1-green" id="percentage"></h1>
@@ -55,13 +96,15 @@
             </div>
         </div>
 
+        <!-- benefit section -->
         <div class="d-flex col">
-            <h2 class="flex-item heading heading2-green" id="benefit-heading"></h2>
+            <h2 class="title heading heading2-green" id="benefit-heading"></h2>
             <div class="flex-item benefit-container" id="benefit-container"></div>
         </div>
 
+        <!-- video section -->
         <div class="d-flex col">
-            <h2 class="flex-item heading heading2-green" id="video-heading"></h2>
+            <h2 class="title heading heading2-green" id="video-heading"></h2>
             <iframe class="flex-item video" id="video" src="" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
@@ -72,6 +115,49 @@
             </a>
         </div>
     </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container-fluid text-lg-left mt-3 px-4">
+            <div class="row text-lg-left mx-auto d-flex justify-content-between">
+                <div class="col-lg-7">
+                    <a class="navbar-brand logo my-3" href="#">
+                        <img id="icon-logo" src="../landing-page/img/brand/icon.svg" alt="logo icon">
+                        <span>
+                            Skilled Women
+                        </span>
+                    </a>
+                    <p class="paragraph-green">Copyright © 2023 Skilled Women <br>
+                        All Rights Reserved </p>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="heading3-green my-3">
+                        Contact Us
+                    </h3>
+                    <p class="paragraph-green email my-2">
+                        skilledwomen@gmail.com
+                    </p>
+                    <p class="paragraph-green my-2">
+                        +62 8123 4567 8901
+                    </p>
+                    <p class="paragraph-green my-2">
+                        Jl Mawar No C XIV/123, Jakarta
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="heading3-green my-3">
+                        Follow Us
+                    </h3>
+                    <div class="row">
+                        <div class="col sosmed">
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-discord-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="jobdetailintro.js"></script>
 </body>

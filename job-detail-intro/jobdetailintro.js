@@ -22,9 +22,9 @@ const showData = async () => {
     const data = await getDetail(id);
 
     // hero section and header
-    const page = document.getElementById('page-title');
-    const title = document.getElementById('job-title');
-    const hero = document.getElementById('hero-img');
+    // const page = document.getElementById('page-title');
+    // const title = document.getElementById('job-title');
+    // const hero = document.getElementById('hero-img');
 
     page.innerHTML = `${job.title} | Skilled Women`;
     title.innerHTML = job.title;
@@ -32,12 +32,12 @@ const showData = async () => {
     hero.alt = getTag(job.image);
 
     // intro section
-    const introHeader = document.getElementById('intro-heading');
-    const introContent = document.getElementById('intro-content');
-    const percent = document.getElementById('percentage');
-    const industryImg = document.getElementById('industry-img');
-    const industry = document.getElementById('industry');
-    const income = document.getElementById('income');
+    // const introHeader = document.getElementById('intro-heading');
+    // const introContent = document.getElementById('intro-content');
+    // const percent = document.getElementById('percentage');
+    // const industryImg = document.getElementById('industry-img');
+    // const industry = document.getElementById('industry');
+    // const income = document.getElementById('income');
 
     introHeader.innerHTML = `Siapa itu ${job.title}?`;
     introContent.innerHTML = data.description;
@@ -48,8 +48,8 @@ const showData = async () => {
     income.innerHTML = data.income;
 
     // benefit section
-    const benefitHeader = document.getElementById('benefit-heading');
-    const benefitContainer = document.getElementById('benefit-container');
+    // const benefitHeader = document.getElementById('benefit-heading');
+    // const benefitContainer = document.getElementById('benefit-container');
 
     benefitHeader.innerHTML = `Apa Keunggulan ${job.title}?`;
     data.benefits.map((value) => {
@@ -57,14 +57,14 @@ const showData = async () => {
         benefitContainer.innerHTML += `
         <div class="benefit-item">
             <img class="icon" src="${value.path}" alt="${alt}">
-            <p class="paragraph-dark">${value.description}</p>
+            <p class="paragraph paragraph-dark">${value.description}</p>
         </div>
     `;
     });
 
     // video section
-    const videoHeader = document.getElementById('video-heading');
-    const video = document.getElementById('video');
+    // const videoHeader = document.getElementById('video-heading');
+    // const video = document.getElementById('video');
     
     videoHeader.innerHTML = `Bagaimana Kehidupan ${job.title}?`;
     video.src = data.video;
