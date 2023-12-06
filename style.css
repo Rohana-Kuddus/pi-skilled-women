@@ -21,13 +21,13 @@
     /*========== Font size ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --logo-font-size: 2rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 2.25rem;
-    --h3-font-size: 1.5rem;
-    --h4-font-size: 1.25rem;
-    --normal-font-size: 1.25rem;
-    --small-font-size: 1rem;
-    --smaller-font-size: 0.875rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.2rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
 
     /*========== Font weight ==========*/
     --font-regular: 400;
