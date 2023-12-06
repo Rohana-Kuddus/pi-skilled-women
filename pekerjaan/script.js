@@ -27,7 +27,7 @@ function cardBigScreen(job) {
              <p class="card-text" style="display: flex; height: fit-content; font-size: large;">${job.description}</p>
              <!-- card button -->
              <div class="text-center">
-               <a href="./job-detail-intro/jobdetailintro.html?id=${id}" class="btn btn-primary-green w-100">Lihat Detail</a>
+               <a href="../job-detail-intro/jobdetailintro.html?id=${job.id}" class="btn btn-primary-green w-100">Lihat Detail</a>
              </div>
            </div>
          </div>
@@ -37,7 +37,7 @@ function cardBigScreen(job) {
 function cardSmallScreen(job) {
   return `
       <div class="col-auto mb-2 col-card" data-id="${job.tagId}">
-      <a href="./job-detail-intro/jobdetailintro.html?id=${id}" style="text-decoration:none;">
+      <a href="../job-detail-intro/jobdetailintro.html?id=${job.id}" style="text-decoration:none;">
         <div class="card rounded-4 h-100">
           <!-- card body -->
           <div class="card-body flex-fill h-100">
