@@ -1,263 +1,15 @@
-/*=============== IMPORT FONT ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
-
-/*=============== VARIABLES CSS ===============*/
+@import url(../style.css);
 
 :root {
     /*========== Colors ==========*/
-    --primary-color: #4F6C6A;
-    --secondary-color: #EDEDED;
-    --accent-color: #F6DDD9;
-    --white-color: white;
-    --dark-green-color: #1E292B;
-
     --primary-hover-color: #435c5a;
     --menu-hover-color: #DA9388;
-    
-
-    /*========== Font and typography ==========*/
-    --font-header : 'Exo', sans-serif;
-    --font-paragraph : 'Titillium Web', sans-serif;   
-
-    /*========== Font size ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --logo-font-size: 2rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 2.25rem;
-    --h3-font-size: 1.5rem;
-    --h4-font-size: 1.25rem;
-    --normal-font-size: 1.25rem;
-    --small-font-size: 1rem;
-    --smaller-font-size: 0.875rem;
 
     /*========== Font weight ==========*/
     --font-regular: 400;
     --font-semi-bold: 600;
     --font-bold: 700;
 }
-
-
-/*=============== BASE ===============*/
-* {
-    text-decoration: none;
-    list-style: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family:var(--font-paragraph);
-    background-color: var(--white-color);
-    font-size: var(--normal-font-size);
-    color: var(--primary-color);
-}
-
-/*=============== REUSRABLE CLASS ===============*/
-.container {
-    padding-top: 3rem;
-    max-width: 1440px;
-}
-
-.section {
-    max-width: 1252px;
-}
-
-
-/*========== style h1, h2, h3, h4, text-normal, text-small, text-smaller ==========*/
-.heading1-green {
-    font-family: var(--font-header);
-    font-size: var(--h1-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-bold);
-}
-.heading1-white {
-    font-family: var(--font-header);
-    font-size: var(--h1-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-bold);
-}
-
-.heading2-green {
-    font-family: var(--font-header);
-    font-size: var(--h2-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-bold);
-}
-.heading2-white {
-    font-family: var(--font-header);
-    font-size: var(--h2-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-bold);
-}
-
-.heading3-green {
-    font-family: var(--font-header);
-    font-size: var(--h3-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
-}
-.heading3-white {
-    font-family: var(--font-header);
-    font-size: var(--h3-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-regular);
-}
-.heading3-dark {
-    font-family: var(--font-header);
-    font-size: var(--h3-font-size);
-    color: var(--dark-green-color);
-    font-weight: var(--font-regular);
-}
-
-.heading4-green {
-    font-family: var(--font-paragraph);
-    font-size: var(--h4-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
-}
-.heading4-white {
-    font-family: var(--font-paragraph);
-    font-size: var(--h4-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-regular);
-}
-
-.paragraph-green {
-    font-family: var(--font-paragraph);
-    font-size: var(--normal-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
-}
-.paragraph-white {
-    font-family: var(--font-paragraph);
-    font-size: var(--normal-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-regular);
-}
-.paragraph-dark {
-    font-family: var(--font-paragraph);
-    font-size: var(--normal-font-size);
-    color: var(--dark-green-color);
-    font-weight: var(--font-regular);
-}
-
-.text-small-green {
-    font-family: var(--font-paragraph);
-    font-size: var(--small-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
-}
-.text-small-white {
-    font-family: var(--font-paragraph);
-    font-size: var(--small-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-regular);
-}
-.text-small-dark {
-    font-family: var(--font-paragraph);
-    font-size: var(--small-font-size);
-    color: var(--dark-green-color);
-    font-weight: var(--font-regular);
-}
-
-/* text paling kecil */
-.text-smaller-green {
-    font-family: var(--font-paragraph);
-    font-size: var(--smaller-font-size);
-    color: var(--primary-color);
-    font-weight: var(--font-regular);
-}
-.text-smaller-white {
-    font-family: var(--font-paragraph);
-    font-size: var(--smaller-font-size);
-    color: var(--white-color);
-    font-weight: var(--font-regular);
-}
-.text-smaller-dark {
-    font-family: var(--font-paragraph);
-    font-size: var(--smaller-font-size);
-    color: var(--dark-green-color);
-    font-weight: var(--font-regular);
-}
-
-
-/*=============== BUTTON ===============*/
-
-/* button primary, without arrow */
-.btn-primary-green{
-    font-family: var(--font-paragraph);
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    font-size: var(--font-paragraph);
-    font-weight: var(--font-regular);
-
-    display: inline-flex;
-    padding: 0.5rem 1.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-}
-.btn-primary-green:hover{
-    background-color: var(--primary-hover-color);
-}
-
-/* right arrow, from remixicon.com */
-.btn-primary-green .ri-arrow-right-line{
-    color: var(--white-color);
-}
-
-.btn-primary-white{
-    font-family: var(--font-paragraph);
-    background-color: var(--white-color);
-    color: var(--primary-color);
-    font-size: var(--font-paragraph);
-    font-weight: var(--font-regular);
-
-    display: inline-flex;
-    padding: 0.5rem 1.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-}
-.btn-primary-white:hover{
-    box-shadow: 1px 1px 6px var(--accent-color);
-}
-
-/* right arrow, from remixicon.com */
-.btn-primary-white .ri-arrow-right-line{
-    color: var(--primary-color);
-}
-
-/* button secondary */
-.btn-secondary{
-    font-family: var(--font-paragraph);
-    background-color: var(--secondary-color);
-    color: var(--dark-green-color);
-    font-size: var(--font-paragraph);
-    font-weight: var(--font-regular);
-
-    display: inline-flex;
-    padding: 0.5rem 1.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-}
-.btn-secondary:hover{
-    box-shadow: 1px 1px 6px var(--dark-green-color);
-}
-
 
 /*=============== NAVBAR ===============*/
 .navbar {
@@ -398,9 +150,15 @@ section.roadmap .copy button {
     font-weight: var(--font-bold);
     padding-bottom: .25rem;
 }
+.card-wrapper .card-body {
+    position: relative;
+    padding-bottom: 7rem;
+}
 .card-wrapper .card-body button {
     padding: 0.5rem 2rem ;
-    margin: 2rem;
+    position: absolute;
+    bottom: 2.5rem;
+
 }
 .card-wrapper .card-body a{
     text-decoration: none;
@@ -417,6 +175,10 @@ section.roadmap .copy button {
     border-color: var(--accent-color);
     border: 2px solid var(--accent-color);
     border-radius: 1.5rem;
+}
+.carousel .card .card-img-top {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 .carousel-inner .carousel-item.active,
@@ -461,7 +223,6 @@ section.roadmap .copy button {
 /*=============== FOOTER ===============*/
 footer {
     margin-top: 7rem;
-    padding-bottom: 3rem;
 }
 
 footer .col-lg-3 h3 , .col-lg-2 h3 {
