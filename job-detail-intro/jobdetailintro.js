@@ -32,7 +32,7 @@ const showData = async () => {
     hero.alt = getTag(job.image);
 
     // tab section
-    const tab = document.getElementById('roadmap');
+    const tab = document.getElementById('roadmap-tab');
     if (id == '1') {
         tab.href = '../Desain-Grafis/roadmapdesaingrafis.html';
     } else if (id == '2') {
